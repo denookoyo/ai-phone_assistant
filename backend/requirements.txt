@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+openai
+whisper
+torch
+pyttsx3
+pydub
+python-multipart  # for handling file uploads in FastAPI
