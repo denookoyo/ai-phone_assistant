@@ -22,14 +22,14 @@ An AI-powered phone switchboard assistant designed to handle business or persona
 git clone https://github.com/your-username/ai-phone_assistant.git
 cd ai-phone_assistant
 
-2. Set up a virtual environment
+### 2. Set up a virtual environment
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-3. Install required packages
+### 3. Install required packages
 pip install -r requirements.txt
 
-4. Add a .env file in the root directory
+### 4. Add a .env file in the root directory
 Create a .env file with the following:
 # GPT4All Model
 MODEL_PATH=models/mistral.gguf
@@ -49,11 +49,11 @@ TWILIO_PHONE_NUMBER=+123456789
 # Application config
 PORT=8000
 
-5. Run the application
+### 5. Run the application
 
 uvicorn main:app --reload
 
-📁 Project Structure
+## 📁 Project Structure
 
 ai-phone_assistant/
 ├── main.py                # FastAPI or core server logic
@@ -68,14 +68,14 @@ ai-phone_assistant/
 ├── requirements.txt       # Python dependencies
 └── README.md              # You're here
 
-🧪 Example API Test
+## 🧪 Example API Test
 
 curl http://localhost:8000/ask \
   -X POST \
   -H "Content-Type: application/json" \
   -d '{"query": "Hello"}'
 
-☎️ Phone System Integration
+## S☎️ Phone System Integration
 If you're using Twilio:
 
 Configure your Twilio number webhook to hit:
