@@ -61,7 +61,19 @@ PORT=8000
 ### 5. Run the application
 
 ```bash
+cd backend
 uvicorn main:app --reload
+```
+on a new terminal
+```bash
+cd frontend
+npm run dev
+```
+or 
+```bash
+cd frontend
+npm run build
+npm start
 ```
 
 ---
